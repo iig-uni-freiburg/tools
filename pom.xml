@@ -7,7 +7,7 @@
 	<packaging>pom</packaging>
 	<version>0.1.6-SNAPSHOT</version>
 
-	<name>Tools</name>
+	<name>Tools: Parent of TOVAL, JAGAL, SEWOL and SEPIA</name>
 	<description>Our tools form the base for the security workflow analysis toolkit SWAT and the Petri net editor Wolfgang.</description>
 	<url>http://doku.telematik.uni-freiburg.de/other-tools</url>
 	<organization>

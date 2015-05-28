@@ -23,9 +23,10 @@
 
 1. PROJECT WORKSPACE STRUCTURE
 
-All tools are grouped in this project's pom.xml-file. All following commands
-must be executed in this project's base directory, where the following
-(simplified) file structure must be given:
+All tools are grouped in this project's pom.xml-file. All commands in this
+readme must be executed in this project's base directory. This project's
+directory is located next to the child projects in the same directory. The file
+structure should look like the following:
 
 - Tools
   - pom.xml
@@ -47,6 +48,9 @@ must be executed in this project's base directory, where the following
 
 2. PREREQUISITES
 
+A good introduction to Apache Maven can be found under
+https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+
 To be able to deploy the tools to the repository, some changes in the Maven
 settings are needed. Under Ubuntu the settings can be found under the following
 path: /etc/maven/settings.xml.
@@ -56,6 +60,7 @@ To be allowed to upload artifacts to the OSSRH, a Jira user account under
 is needed and the user must have permissions in the group
   de.uni.freiburg.iig.telematik.
 The user credentials must be added to the "servers" block in the settings:
+
 	<server>
 	  <id>ossrh</id>
 	  <username>USERNAME</username>
@@ -65,6 +70,7 @@ The user credentials must be added to the "servers" block in the settings:
 To sign the generated artifacts, Apache Maven needs the PGP passphrase. It can
 be added in the section "profiles", where a new profile must be added. The
 "PGP_PASSPHRASE" must be replaced by the actual passphrase.
+
 	<profile>
 	  <id>ossrh</id>
 	  <activation>

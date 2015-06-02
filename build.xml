@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Tools.package" default="package" basedir=".">
+
+	<!-- Source and destination directories -->
+	<echo>Base dir: ${basedir}</echo>
+
+	<!-- Package JARs -->
+	<target name="package" description="">
+		<echo>Packaging TOVAL</echo>
+		<subant target="package">
+			<fileset dir="../TOVAL" includes="**/build.xml" />
+		</subant>
+		<echo>Packaging JAGAL</echo>
+		<subant target="package">
+			<fileset dir="../JAGAL" includes="**/build.xml" />
+		</subant>
+		<echo>Packaging SEWOL</echo>
+		<subant target="package">
+			<fileset dir="../SEWOL" includes="**/build.xml" />
+		</subant>
+		<echo>Packaging SEPIA</echo>
+		<subant target="package">
+			<fileset dir="../SEPIA" includes="**/build.xml" />
+		</subant>
+	</target>
+
+</project>

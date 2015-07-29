@@ -5,11 +5,11 @@
 	<groupId>de.uni.freiburg.iig.telematik</groupId>
 	<artifactId>tools</artifactId>
 	<packaging>pom</packaging>
-	<version>0.1.6-SNAPSHOT</version>
+	<version>1.0.0</version>
 
 	<name>Tools: Parent of TOVAL, JAGAL, SEWOL and SEPIA</name>
 	<description>Our tools form the base for the security workflow analysis toolkit SWAT and the Petri net editor Wolfgang.</description>
-	<url>http://doku.telematik.uni-freiburg.de/other-tools</url>
+	<url>https://github.com/iig-uni-freiburg/tools</url>
 	<organization>
 		<name>Institute of Computer Science and Social Studies, Department of Telematics</name>
 		<url>http://www.telematik.uni-freiburg.de/</url>
@@ -23,12 +23,31 @@
 		</license>
 	</licenses>
 
+	<scm>
+		<url>https://github.com/iig-uni-freiburg/tools.git</url>
+	</scm>
+
 	<modules>
 		<module>../TOVAL</module>
 		<module>../JAGAL</module>
 		<module>../SEWOL</module>
 		<module>../SEPIA</module>
 	</modules>
+
+        <developers>
+            <developer>
+                <id>adlange</id>
+                <name>Adrian Lange</name>
+                <email>lange@iig.uni-freiburg.de</email>
+                <organization>IIG Telematics</organization>
+                <organizationUrl>http://www.telematik.uni-freiburg.de/</organizationUrl>
+                <roles>
+                    <role>Project-Administrator</role>
+                    <role>Developer</role>
+                </roles>
+                <timezone>+2</timezone>
+            </developer>
+        </developers>
 
 	<build>
 		<pluginManagement>

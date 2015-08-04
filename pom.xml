@@ -7,7 +7,7 @@
 	<packaging>pom</packaging>
 	<version>1.0.0</version>
 
-	<name>Tools: Parent of TOVAL, JAGAL, SEWOL and SEPIA</name>
+	<name>Tools: Parent of JAGAL, SEWOL and SEPIA</name>
 	<description>Our tools form the base for the security workflow analysis toolkit SWAT and the Petri net editor Wolfgang.</description>
 	<url>https://github.com/iig-uni-freiburg/tools</url>
 	<organization>
@@ -28,7 +28,6 @@
 	</scm>
 
 	<modules>
-		<module>../TOVAL</module>
 		<module>../JAGAL</module>
 		<module>../SEWOL</module>
 		<module>../SEPIA</module>

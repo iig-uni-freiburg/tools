@@ -12,7 +12,7 @@
 |     ||   __|  |     ||  |  || __  |  |_   _||     ||     ||  |   |   __|
 |  |  ||   __|  |  |  ||  |  ||    -|    | |  |  |  ||  |  ||  |__ |__   |
 |_____||__|     |_____||_____||__|__|    |_|  |_____||_____||_____||_____|
-                                                                          
+
 
 			Table of contents:
 			1. Project workspace structure
@@ -29,10 +29,6 @@ directory is located next to the child projects in the same directory. The file
 structure should look like the following:
 
 - Tools
-  - pom.xml
-- TOVAL
-  - src/
-  - res/
   - pom.xml
 - JAGAL
   - src/
@@ -95,15 +91,20 @@ created arbitrarily and their versions always end with "-SNAPSHOT". To make a
 normal release, you can remove the "-SNAPSHOT" suffix. The version number can
 be set in all sub-projects with their dependencies using the following command:
 
-  $ mvn versions:set -DnewVersion=0.1.6-SNAPSHOT
+  $ mvn versions:set -DnewVersion=1.0.1-SNAPSHOT
 
-For the releasing deployment, the profile "release" must be called:
+For the deployment of a release, the profile "release" must be called:
 
   $ mvn clean deploy -P release
 
 The resulting snapshots can be found under:
 
 - https://oss.sonatype.org/content/repositories/snapshots/de/uni/freiburg/iig/
+
+The normal releases will be found after some minutes in the Maven Central
+Repository under:
+
+- http://search.maven.org/
 
 
 4. MORE INFORMATION

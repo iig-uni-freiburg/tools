@@ -91,7 +91,7 @@ created arbitrarily and their versions always end with "-SNAPSHOT". To make a
 normal release, you can remove the "-SNAPSHOT" suffix. The version number can
 be set in all sub-projects with their dependencies using the following command:
 
-  $ mvn versions:set -DnewVersion=1.0.1-SNAPSHOT
+  $ mvn versions:set -DnewVersion=1.0.2-SNAPSHOT
 
 For the deployment of a release, the profile "release" must be called:
 

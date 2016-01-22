@@ -5,7 +5,7 @@
         <groupId>de.uni.freiburg.iig.telematik</groupId>
         <artifactId>tools</artifactId>
         <packaging>pom</packaging>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
 
         <name>Tools: Parent of JAGAL, SEWOL and SEPIA</name>
         <description>Our tools form the base for the security workflow analysis toolkit SWAT and the Petri net editor Wolfgang.</description>
